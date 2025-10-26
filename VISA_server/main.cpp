@@ -3,7 +3,6 @@
 
 #include <iostream>
 #include <boost/asio.hpp>
-#include <visa.h>
 
 using boost::asio::ip::tcp;
 
