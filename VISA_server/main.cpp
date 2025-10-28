@@ -13,7 +13,7 @@
 #include <boost/asio.hpp>
 
 // グローバルな定数 (ポート番号)
-constexpr int PORT = 12345;
+constexpr int PORT = 55555;
 
 /**
  * @brief 現在のマシンのプライマリIPv4アドレスを取得します。
@@ -197,7 +197,7 @@ void handle_client(boost::asio::ip::tcp::socket& socket, ViSession instr) {
 
         std::cout << "送信: " << reply;
 
-        boost::asio::write(socket, boost::asio::buffer(reply + "\n"));
+        boost::asio::write(socket, boost::asio::buffer(reply));
 
     }
     catch (const std::exception& e) {
