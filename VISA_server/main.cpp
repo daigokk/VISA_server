@@ -230,10 +230,10 @@ int main() {
         return 1;
     }
 
-    std::string instrAddress = findInstrument(defaultRM, "TEKTRONIX");
+    std::string instrAddress = findInstrument(defaultRM, "yokogawa");
 
     if (instrAddress.empty()) {
-        std::cerr << "対象の計測器 (TEKTRONIX) の検索に失敗しました。" << std::endl;
+        std::cerr << "対象の計測器 (yokogawa) の検索に失敗しました。" << std::endl;
         viClose(defaultRM);
         return 1;
     }
